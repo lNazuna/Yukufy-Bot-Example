@@ -5,8 +5,12 @@ module.exports = {
     sameVoice: true,
     run: async (client, interaction) => {
 
-        client.yukufy.pause();
-
-        return interaction.reply(`Paused the current track`);
+        if(client.yukufy.player.state.status === "paused") {
+            return interaction.reply(`This current track is already paused`);
+        } else {
+            client.yukufy.pause();
+            return interaction.reply(`Paused the current track`);
+        }
+        
     },
 };

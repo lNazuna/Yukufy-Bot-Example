@@ -1,6 +1,6 @@
 const { readdirSync } = require("fs");
 const { REST, Routes, Client, Collection } = require('discord.js');
-const { client_id, client_token } = require("./configuration/index");
+const { client_id, client_token, spotify } = require("./configuration/index");
 const { logger } = require("./functions/logger");
 const { YukufyClient } = require('yukufy');
 
@@ -21,8 +21,8 @@ client.slashCommands = new Collection();
 client.yukufy = new YukufyClient(client, {
     // Spotify API configuration
     configApi: {
-      clientId: '5f2e554d15b54d7ea3f22d321bc0e654',
-      clientSecret: '38c376ce30c940a1a82122d13c358ab4',
+      clientId: spotify.client_id,
+      clientSecret: spotify.client_secret,
     },
     // Player configuration
     configPlayer: {
