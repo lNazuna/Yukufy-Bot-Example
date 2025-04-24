@@ -22,7 +22,7 @@ A powerful Discord music bot with support for multiple sources (Spotify, SoundCl
 Clone the project
 
 ```bash
-git clone https://github.com/lNazuna/Yukufy-Bot-Example
+git clone https://github.com/lNazuna/Yukufy-Bot-Example.git
 ```
 
 Enter the project directory
