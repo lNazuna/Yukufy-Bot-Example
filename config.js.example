@@ -1,0 +1,19 @@
+require('dotenv').config();
+
+module.exports = {
+  TOKEN: process.env.TOKEN || 'YOUR_DISCORD_BOT_TOKEN',
+  GUILD_ID: process.env.GUILD_ID || 'YOUR_GUILD_ID', // Optional If you want the commands to be registered globally, enter the server ID if not leave blank
+  MONGODB_URL: process.env.MONGODB_URL || '', // Optional
+  OWNER_ID: process.env.OWNER_ID || "207320731263041536",
+  LOGS: {
+    COMMANDS: process.env.LOGS_COMMANDS || "CHANNEL_ID", // Optional to desativate leave blank
+    ERROR: process.env.LOGS_ERROR || "" // Webhook URL
+  },
+  SPOTIFY: {
+    CLIENT_ID: process.env.SPOTIFY_CLIENT_ID || "YOU_SPOTIFY_CLIENT_ID",
+    CLIENT_SECRET: process.env.SPOTIFY_CLIENT_SECRET || "YOUR_SPOTIFY_CLIENT_SECRE",
+    DEFAULT_VOLUME: 75, // Default volume level (0-100)
+    LEAVE_ON_EMPTY_QUEUE: true, // Auto-disconnect when queue is empty
+    LEAVE_ON_EMPTY_QUEUE_COOLDOWN: 30000 // Wait time before disconnecting (ms)
+  },
+};

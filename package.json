@@ -1,20 +1,48 @@
 {
-  "name": "music-bot",
-  "description": "music bot for discord using yukufy.",
-  "version": "1.0.1",
+  "name": "yukufy-bot-example",
+  "version": "1.1.0",
+  "description": "Yukufy is a sophisticated Node.js library for music playback in Discord bots. It provides a simple yet powerful API for streaming music from multiple platforms and managing playback with advanced features.",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
-    "ascii-table": "^0.0.9",
-    "colors": "^1.4.0",
-    "discord.js": "^14.16.2",
-    "mewcard": "^1.7.7",
-    "moment": "^2.30.1",
-    "ms": "^2.1.3",
-    "yukufy": "^1.5.0"
+    "axios": "^1.8.4",
+    "chalk": "^4.1.2",
+    "discord.js": "14.18.0",
+    "dotenv": "^16.5.0",
+    "mewcard": "^1.8.0",
+    "mongoose": "^8.13.2",
+    "yukufy": "^1.6.0"
   },
-  "license": "MIT"
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lNazuna/Yukufy-Bot-Example.git"
+  },
+  "keywords": [
+    "discord-bot",
+    "music-bot",
+    "yukufy",
+    "spotify",
+    "soundcloud",
+    "discord.js",
+    "mewcard",
+    "audio-player",
+    "music-streaming",
+    "discord-music",
+    "slash-commands",
+    "music-cards",
+    "node-js",
+    "multimedia",
+    "queue-system",
+    "voice-channel"
+  ],
+  "author": "nazuna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lNazuna/Yukufy-Bot-Example/issues"
+  },
+  "homepage": "https://github.com/lNazuna/Yukufy-Bot-Example#readme"
 }
